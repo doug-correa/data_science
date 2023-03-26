@@ -1,4 +1,4 @@
-📔 # Notebooks de Data Science
+# 📔 Notebooks de Data Science
 
 Aqui você encontra os *notebooks* dos meus projetos pessoais na área de Data Science e Machine Learning
 
