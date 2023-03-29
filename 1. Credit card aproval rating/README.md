@@ -24,12 +24,12 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 
 ## Dataset
 
-Files:
+### Files:
 
 * application_records.csv → Informações e características dos aplicantes
 * credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes
 
-### aplication_records.csv
+#### aplication_records.csv
 
 `CODE_GENDER` → Gênero <br>
 `FLAG_OWN_CAR` → Possui veículo próprio <br>
@@ -47,4 +47,20 @@ Files:
 `FLAG_PHONE` → Possui telefone residencial <br>
 `FLAG_EMAIL` → Possui e-mail <br>
 `OCCUPATION_TYPE` → Profissão <br>
+
+#### credit_records.csv
+
+Cada ID possui uma entrada para cada mês desde sua aplicação, contendo na coluna 'STATUS' uma flag que corresponde a um determinado <br>
+intervalo de dias que se passaram desde a contratação do crédito sem que houvesse pagamento
+
+`MONTHS_BALANCE` → Contagem regressiva de meses desde a aplicação (-1 corresponde ao mês passado) <br>
+`STATUS` → <br>
+    <li> 0: 1-29 dias <br>
+    <li> 1: 30-59 dias <br>
+    <li> 2: 60-89 dias <br>
+    <li> 3: 90-119 dias <br>
+    <li> 4: 120-149 dias <br>
+    <li> 5: Mais de 150 dias de inadimplência <br>
+    <li> C: Pago naquele mês <br>
+    <li> X: Sem debitos naquele mês <br>
 
