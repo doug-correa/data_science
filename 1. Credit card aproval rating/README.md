@@ -74,3 +74,13 @@ Total de entradas: 1048574
 
 <li> Python 
 <li> Pandas
+<li> Numpy
+<li> Matplotlib
+<li> Seaborn
+<li> Scikit Learn
+<li> Imblearn
+<li> XGBoost
+ 
+## Transforação dos dados
+ 
+
