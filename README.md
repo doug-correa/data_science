@@ -1,6 +1,6 @@
 # 📔 Data Science and Machine Learning projects
 
-Aqui você encontra os meus projetos pessoais na área de Data Science e Machine Learning
+Here you can find my personal projects in the field of Data Science and Machine Learning
 
 ## Projetos:
 
