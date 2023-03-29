@@ -55,6 +55,7 @@ Você pode acessar os arquivos que contém os dados utilizados neste modelo clic
 `FLAG_PHONE` → Possui telefone residencial <br>
 `FLAG_EMAIL` → Possui e-mail <br>
 `OCCUPATION_TYPE` → Profissão <br>
+`CNT_FAM_MEMBERS` → Número de membros na família <br>
 
 Total de entradas: 438556
 
@@ -140,6 +141,8 @@ Depois que o modelo ficou pronto testei outros prazos como regra de corte, mas d
 Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, isso precisará ser abordado novamente no desenvolvimento do modelo.
  
 ## Desenvolvimento do modelo
+  
+Dividi os dados entre em eixos *x* e *y*, sendo *x* para classes categóricas e *y* para variáveis dependentes, e depois dividi cada um dos eixos em dados para treino e para teste do modelo.
 
 #### Dimensionamento e balanceamento
   
@@ -154,7 +157,7 @@ Devido ao expressivo desbalanceamento no status dos aplicantes, apliquei uma té
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=900>
 </p>
   
-<h5 align="center">Resultados de acurácia dos modelos testados</h5>
+<h5 align="center">Resultado de precisão do modelo escolhido</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results_2.PNG" width=450>
 </p>
