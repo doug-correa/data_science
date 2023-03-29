@@ -170,5 +170,5 @@ O modelo que obteve melhor acurácia foi o XGBoost, obtendo um score de aproximd
  
 Apesar dos dados limitados e com um volume de baixa expressão para o desenvolvimento de algoritmos complexos de aprendizado de máquina, podemos perceber uma precisão bastante positiva na predição dos resultados. 
   
-#### Desenvolvimentos futuro
+#### Desenvolvimento futuro
 * Desenvolver uma aplicação de formulário para automatizar o processo de avaliação de aprovação do cartão de crédito
