@@ -4,7 +4,7 @@
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/credit_card.png" width=350>
 </p>
 
-Modelo de aprendizado de máquina capaz de prever se um pedido de cartão de crédito deve ser aprovado ou não com base em várias características do solicitante.
+Modelo de aprendizado de máquina capaz de prever se um aplicação para cartão de crédito irá ou não se tornar uma inadimplência com base em características e informações do solicitante.
 
 O notebook do projeto pode ser acessado clicando [aqui](https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/credit_card_approval_rating.ipynb)
 
