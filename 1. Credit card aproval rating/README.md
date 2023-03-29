@@ -31,6 +31,7 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 
 #### aplication_records.csv
 
+`ID` → ID do aplicante <br>
 `CODE_GENDER` → Gênero <br>
 `FLAG_OWN_CAR` → Possui veículo próprio <br>
 `FLAG_OWN_REALTY` → Possui imóvel próprio <br>
@@ -48,11 +49,14 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 `FLAG_EMAIL` → Possui e-mail <br>
 `OCCUPATION_TYPE` → Profissão <br>
 
+Total de entradas: 438556
+
 #### credit_records.csv
 
 Cada ID possui uma entrada para cada mês desde sua aplicação, contendo na coluna 'STATUS' uma flag que corresponde a um determinado <br>
 intervalo de dias que se passaram desde a contratação do crédito sem que houvesse pagamento
 
+`ID` → ID do aplicante <br>
 `MONTHS_BALANCE` → Contagem regressiva de meses desde a aplicação (-1 corresponde ao mês passado) <br>
 `STATUS` → <br>
     <li> 0: 1-29 dias <br>
@@ -64,3 +68,10 @@ intervalo de dias que se passaram desde a contratação do crédito sem que houv
     <li> C: Pago naquele mês <br>
     <li> X: Sem debitos naquele mês <br>
 
+Total de entradas: 1048574
+     
+## Tecnologias utilizadas
+
+* Python
+* Pandas
+     
