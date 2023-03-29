@@ -163,7 +163,7 @@ Elenquei alguns modelos que se aplicam na solução de problemas de classificaç
   
 O modelo que obteve melhor acurácia foi o XGBoost, obtendo um score de aproximadamente 95%.
   
-O XGBoost (Extreme Gradient Boosting) é um algoritmo supervisionado baseado em árvore que usa técnicas de regularizaçã e gradient boosting para aumentar a precisão do modelo.
+O XGBoost (Extreme Gradient Boosting) é um algoritmo supervisionado baseado em árvore que usa técnicas de regularização e gradient boosting para aumentar a precisão do modelo.
   
 <h5 align="center">Resultados de precisão do modelo escolhido</h5>
 <p align="center">
