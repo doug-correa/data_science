@@ -142,7 +142,7 @@ Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, iss
  
 ## Desenvolvimento do modelo
   
-Dividi os dados entre em eixos *x* e *y*, sendo *x* para classes categóricas e *y* para variáveis dependentes, e depois dividi cada um dos eixos em dados para treino e para teste do modelo.
+Dividi os dados entre em eixos *x* e *y*, sendo *x* para classes categóricas e *y* para variáveis dependentes, e depois dividi os dados para treino e para teste do modelo.
 
 #### Dimensionamento e balanceamento
   
@@ -152,12 +152,23 @@ Devido ao expressivo desbalanceamento no status dos aplicantes, apliquei uma té
   
 #### Definindo modelos e testando acurácias
 
+Elenquei alguns modelos que se aplicam na solução de problemas de classificação binária e testei suas acurácias.
+
 <h5 align="center">Resultados de acurácia dos modelos testados</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=900>
 </p>
   
-<h5 align="center">Resultado de precisão do modelo escolhido</h5>
+O modelo que obteve melhor acurácia foi o XGBoost, obtendo um score de aproximdamente 95%.
+  
+<h5 align="center">Resultados de precisão do modelo escolhido</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results_2.PNG" width=450>
 </p>
+
+## Conclusão
+ 
+Apesar dos dados limitados e com um volume de baixa expressão para o desenvolvimento de algoritmos complexos de aprendizado de máquina, podemos perceber uma precisão bastante positiva na predição dos resultados. 
+  
+#### Desenvolvimentos futuro
+* Desenvolver uma aplicação de formulário para automatizar o processo de avaliação de aprovação do cartão de crédito
