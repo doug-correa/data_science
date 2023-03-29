@@ -72,6 +72,5 @@ Total de entradas: 1048574
      
 ## Tecnologias utilizadas
 
-* Python
+<li> Python 
 * Pandas
-     
