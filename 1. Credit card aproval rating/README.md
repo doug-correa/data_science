@@ -11,7 +11,7 @@ E se pudessemos prever, a partir de suas características pessoais e informaçõ
 Com os algoritmos de aprendizado de máquina podemos analisar grandes quantidades de dados e identificar padrões que os humanos podem não ser capazes de identificar. Isso ajuda as instituições financeiras a fazerem uma avaliação mais precisa do risco de emprestar dinheiro a um indivíduo ou empresa, tendo assim uma assertividade maior na hora de indentificar possíveis inadimplências.
 
 E-mail: dougpcorrea@hotmail.com <br>
-Celular: +55 (51) 98492 5343
+Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 
 ## Sumário
  
