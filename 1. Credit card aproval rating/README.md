@@ -18,6 +18,6 @@ Celular: +55 (51) 98492 5343
 1. Dataset
 2. Tecnologias utilizadas
 3. Execução do projeto
-   * 1. Análise exploratória dos dados
-   * 2. Transformação dos dados
-       * Verificação de duplicatas
+  * 1. Análise exploratória dos dados
+  * 2. Transformação dos dados
+    * Verificação de duplicatas
