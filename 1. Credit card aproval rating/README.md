@@ -20,4 +20,6 @@ Celular: +55 (51) 98492 5343
 3. [Execução do projeto]
    * [1. Análise exploratória dos dados]
    * [2. Transformação dos dados]
-       * [Verificação de duplicatas]
+   * [3. Desenvolvimento do modelo]
+
+## Dataset
