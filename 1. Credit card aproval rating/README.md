@@ -1,7 +1,7 @@
 # Avaliação de aprovação de cartão de crédito com Machine Learning
 
 <p align="center">
-  <img src="https://www.pngmart.com/files/3/Credit-Card-PNG-Clipart.png" width=600>
+  <img src="https://www.pngmart.com/files/3/Credit-Card-PNG-Clipart.png" width=300>
 </p>
 
 ## Problema de negócio
