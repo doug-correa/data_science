@@ -42,7 +42,7 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 `NAME_FAMILY_STATUS` → Estado civil <br>
 `NAME_HOUSING_TYPE` → Tipo de moradia <br>
 `DAYS_BIRTH` → Contagem regressiva de dias até a data de nascimento (-1 corresponde a ontem) <br>
-`DAYS_EMPLOYED` → Contagem regressiva de dias até a data de contrato. (+1 corresponde a desemprego há 1 dia, -1 contrato ontem) <br>
+`DAYS_EMPLOYED` → Contagem regressiva de dias até a data de contrato. (+1 desemprego há 1 dia, -1 contrato ontem) <br>
 `FLAG_MOBIL` → Possui telefone celular <br>
 `FLAG_WORK_PHONE` → Possui telefone celular corporativo <br>
 `FLAG_PHONE` → Possui telefone residencial <br>
