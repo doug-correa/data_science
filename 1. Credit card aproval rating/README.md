@@ -1,5 +1,9 @@
 # Avaliação de aprovação de cartão de crédito com Machine Learning
 
+<p align="center">
+  <img src="https://static.vecteezy.com/system/resources/previews/008/490/560/non_2x/credit-card-transparent-background-png.png" width=600>
+</p>
+
 ## Problema de negócio
 
 A avaliação de aprovação de crédito é uma etapa importante para as instituições financeiras antes de concederem empréstimos ou financiamentos a um indivíduo ou empresa, ela serve para avaliar o risco envolvido e garantir que o dinheiro emprestado será recuperado com juros, o que é importante para o retorno financeiro da instituição.
