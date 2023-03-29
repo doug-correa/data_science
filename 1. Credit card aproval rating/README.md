@@ -24,15 +24,14 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 1. [Dataset](#Dataset)
 2. [Tecnologias utilizadas](#tecnologias-utilizadas)
 3. [Execução do projeto](#análise-exploratória-e-transformação-dos-dados)
-   * [1. Análise exploratória dos dados](#análise-exploratória-e-transformação-dos-dados)
+   * [1. Análise exploratória e transformação dos dados](#análise-exploratória-e-transformação-dos-dados)
    * [2. Desenvolvimento do modelo](#desenvolvimento-do-modelo)
 
 ## Dataset
 
 ### Files:
 
-Você pode acessar os dados utilizados neste modelo clicando [aqui](www.google.com)<br>
-Os dados são públicos e foram disponibilizados gratuitamente na plataforma [Kaggle](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction) para fins educacionais.
+Você pode acessar os arquivos que contém os dados utilizados neste modelo clicando [aqui](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
 
 <li> application_records.csv → Informações e características dos aplicantes <br>
 <li> credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes <br>
