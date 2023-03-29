@@ -85,16 +85,32 @@ Total de entradas: 1048574
  
 Verifiquei que o número total de IDs únicos em *aplication_records.csv* (438510) divergia do número total de linhas (438556), nesse caso foi necessário eliminar dados duplicados. Optei por manter somente o último dado lançado.
  
-Em *aplication_records.csv* a coluna `OCCUPATION_TYPE` apresentou um elevado número de dados nulos e portanto a mesma foi eliminada do dataframe para que não interferisse nos resultados do modelo.
- 
+Em *aplication_records.csv* a coluna `OCCUPATION_TYPE` apresentou um elevado número de dados nulos e portanto foi necessário eliminá-la do dataframe. Dados nulos representam uma falta de informação sobre as instâncias usadas para treinar o modelo de aprendizado de máquina. Quando um modelo é treinado com dados incompletos pode haver uma perda de precisão e confiabilidade nos resultados produzidos pelo mesmo, se houvesse por exemplo uma correlação entre os dados nulos e os resultados que estamos tentando prever isso poderia causar um viés no modelo.
+
+<h5 align="center">Dados nulos em *aplication_records.csv*</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_2.PNG" width=600>
 </p>
 
 Em *credit_records.csv* verifiquei que não haviam dados nulos.
- 
+
+<h5 align="center">Dados nulos em *credit_records.csv*</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_3.PNG" width=600>
+</p>
+
+Em seguida transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" tornaram-se 1 e 0) e fiz uma verificação nas colunas de características dos aplicantes e verifiquei que haviam alguns *outliers*.
+
+<h5 align="center">Distribuição dos dados em *application_records.csv*</h5>
+<p align="center">
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_1.PNG" width=600>
+</p>
+
+Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers podem ser vistos como valores extremos e podem ter um impacto significativo na precisão geral do modelo. Eles podem fazer com que o modelo superajuste os dados de treinamento e resulte em generalização ruim para novos dados, eles podem distorcer os resultados do modelo puxando os valores previstos para eles. Isso pode resultar em um modelo tendencioso que não reflete com precisão os dados subjacentes.
+
+<h5 align="center">Distribuição dos dados em *application_records.csv após eliminação de outliers*</h5>
+<p align="center">
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=600>
 </p>
 
  
