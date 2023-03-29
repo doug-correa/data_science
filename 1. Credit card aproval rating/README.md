@@ -127,7 +127,7 @@ Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers pode
 
 #### Definição da regra de negócio
  
-Os casos que tiveram histórico de inadimplência de mais de 60 dias ao menos uma vez serão considerados como perda/prejuízo e, portanto, são futuros casos como estes que tentaremos prever.
+Os casos que tiveram histórico de inadimplência de mais de 60 dias ao menos uma vez serão considerados como perda/prejuízo e, portanto, são casos como estes que tentaremos prever no futuro.
  
 Em *credit_records.csv*, mantive apenas um registro para cada ID, constando o máximo de dias que o aplicador esteve em atraso em seu histórico, e na coluna `STATUS` defini como esta regra 0 e 1, sendo 0 para nenhum atraso de mais de 60 dias e 1 para pelo menos um atraso de mais de 60 dias em seu histórico.
  
