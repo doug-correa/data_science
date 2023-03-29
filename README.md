@@ -4,4 +4,4 @@ Aqui você encontra os meus projetos pessoais na área de Data Science e Machine
 
 ## Projetos:
 
-* **[Avaliação de aprovação de cartão de crédito com Machine Learning](https://github.com/dougpcorrea/data_science/tree/main/1.%20Credit%20card%20aproval%20rating)** 
+* 💳 **[Avaliação de aprovação de cartão de crédito com Machine Learning](https://github.com/dougpcorrea/data_science/tree/main/1.%20Credit%20card%20aproval%20rating)** 
