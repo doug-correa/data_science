@@ -3,7 +3,7 @@
 Modelo de aprendizado de máquina capaz de prever se um pedido de cartão de crédito deve ser aprovado ou não com base em várias características do solicitante.
 
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/credit_card.png" width=500>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/credit_card.png" width=350>
 </p>
 
 ## Problema de negócio
