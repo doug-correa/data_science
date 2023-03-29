@@ -3,6 +3,5 @@
 Aqui você encontra os meus projetos pessoais na área de Data Science e Machine Learning
 
 ## Projetos:
-Lista de projetos em Jupyter Notebook:
 
 * **[Avaliação de aprovação de cartão de crédito com Machine Learning](https://github.com/dougpcorrea/data_science/tree/main/1.%20Credit%20card%20aproval%20rating)** 
