@@ -23,3 +23,28 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
    * [3. Desenvolvimento do modelo]
 
 ## Dataset
+
+Files:
+
+* application_records.csv → Informações e características dos aplicantes
+* credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes
+
+### aplication_records.csv
+
+`CODE_GENDER` → Gênero <br>
+`FLAG_OWN_CAR` → Possui veículo próprio <br>
+`FLAG_OWN_REALTY` → Possui imóvel próprio <br>
+`CNT_CHILDREN` → Quantide de filhos <br>
+`AMT_INCOME_TOTAL` → Renda total <br>
+`NAME_INCOME_TYPE` → Origem da renda <br>
+`NAME_EDUCATION_TYPE` → Nível de educação <br>
+`NAME_FAMILY_STATUS` → Estado civil <br>
+`NAME_HOUSING_TYPE` → Tipo de moradia <br>
+`DAYS_BIRTH` → Contagem regressiva de dias até a data de nascimento (-1 corresponde a ontem) <br>
+`DAYS_EMPLOYED` → Contagem regressiva de dias até a data de nascimento. Se positivo, significa que a pessoa está desempregada pelos dias correspondentes <br>
+`FLAG_MOBIL` → Possui telefone celular <br>
+`FLAG_WORK_PHONE` → Possui telefone celular corporativo <br>
+`FLAG_PHONE` → Possui telefone residencial <br>
+`FLAG_EMAIL` → Possui e-mail <br>
+`OCCUPATION_TYPE` → Profissão <br>
+
