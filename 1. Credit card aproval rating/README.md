@@ -140,10 +140,21 @@ Depois que o modelo ficou pronto testei outros prazos como regra de corte, mas d
 Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, isso precisará ser abordado novamente no desenvolvimento do modelo.
  
 ## Desenvolvimento do modelo
- 
+
+#### Dimensionamento e balanceamento
+  
+Dimensionei os dados das colunas de classificação em um intervalo entre 0 e 1. Este escalonamento ajuda a normalizar os dados, evitando que um conjunto de dados com variâncias muito diferentes tenha impacto no desempenho do modelo. Por exemplo, se você tiver um conjunto de dados em que as variáveis possuam diferentes unidades de medida (por exemplo, altura em centímetros e peso em quilos), os dados não estarão em uma escala comparável e isso pode afetar negativamente o desempenho do modelo. 
+
+Devido ao expressivo desbalanceamento no status dos aplicantes, apliquei uma técnica para aumentar artificialmente a quantidade de amostras da classe minoritária para equilibrar a distribuição das classes no conjunto de dados. Utilizei a técnica SMOTE (Synthetic Minority Over-sampling Technique), que cria novas amostras sintéticas interpolando entre as amostras existentes.
+  
 #### Definindo modelos e testando acurácias
 
 <h5 align="center">Resultados de acurácia dos modelos testados</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=950>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=700>
+</p>
+  
+<h5 align="center">Resultados de acurácia dos modelos testados</h5>
+<p align="center">
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results_2.PNG" width=400>
 </p>
