@@ -14,9 +14,9 @@ A avaliação de aprovação de crédito é uma etapa importante para as institu
 
 Além disso, a avaliação de crédito ajuda a proteger os clientes de si mesmos, evitando que contraiam empréstimos que não possam pagar. Isso pode ajudar a evitar a possibilidade de inadimplência e problemas financeiros que podem afetar negativamente o solicitante e sua família.
 
-E se pudessemos prever, a partir de suas características pessoais e informações profissionais, se um indivíduo, ao receber um cartão crédito, será capaz de cumprir com os pagamentos ou se tornará inadimplente?
+E se pudéssemos prever, a partir de suas características pessoais e informações profissionais, se um indivíduo, ao receber um cartão crédito, será capaz de cumprir com os pagamentos ou se tornará inadimplente?
 
-Com os algoritmos de aprendizado de máquina podemos analisar grandes quantidades de dados e identificar padrões que os humanos podem não ser capazes de identificar. Isso ajuda as instituições financeiras a fazerem uma avaliação mais precisa do risco de emprestar dinheiro a um indivíduo ou empresa, tendo assim uma assertividade maior na hora de indentificar possíveis inadimplências.
+Com os algoritmos de aprendizado de máquina podemos analisar grandes quantidades de dados e identificar padrões que os humanos podem não ser capazes de identificar. Isso ajuda as instituições financeiras a fazerem uma avaliação mais precisa do risco de emprestar dinheiro a um indivíduo ou empresa, tendo assim uma assertividade maior na hora de identificar possíveis inadimplências.
 
 E-mail: dougpcorrea@hotmail.com <br>
 Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
@@ -35,8 +35,8 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 
 Você pode acessar os arquivos que contém os dados utilizados neste modelo clicando [aqui](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
 
-<li> application_records.csv → Informações e características dos aplicantes <br>
-<li> credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes <br>
+<li> application_records.csv → Informações e características dos aplicadores <br>
+<li> credit_records.csv → Histórico mensal de situação de inadimplência dos aplicadores <br>
 
 #### aplication_records.csv
 
@@ -44,7 +44,7 @@ Você pode acessar os arquivos que contém os dados utilizados neste modelo clic
 `CODE_GENDER` → Gênero <br>
 `FLAG_OWN_CAR` → Possui veículo próprio <br>
 `FLAG_OWN_REALTY` → Possui imóvel próprio <br>
-`CNT_CHILDREN` → Quantide de filhos <br>
+`CNT_CHILDREN` → Quantidade de filhos <br>
 `AMT_INCOME_TOTAL` → Renda total <br>
 `NAME_INCOME_TYPE` → Origem da renda <br>
 `NAME_EDUCATION_TYPE` → Nível de educação <br>
@@ -97,7 +97,7 @@ Total de entradas: 1048574
  
 Verifiquei que o número total de IDs únicos em *aplication_records.csv* (438510) divergia do número total de linhas (438556), nesse caso foi necessário eliminar dados duplicados. Optei por manter somente o último dado lançado.
  
-Em *aplication_records.csv* a coluna `OCCUPATION_TYPE` apresentou um elevado número de dados nulos e portanto foi necessário eliminá-la do dataframe. Dados nulos representam uma falta de informação sobre as instâncias usadas para treinar o modelo de aprendizado de máquina. Quando um modelo é treinado com dados incompletos pode haver uma perda de precisão e confiabilidade nos resultados produzidos pelo mesmo, se houvesse por exemplo uma correlação entre os dados nulos e os resultados que estamos tentando prever isso poderia causar um viés no modelo.
+Em *aplication_records.csv* a coluna `OCCUPATION_TYPE` apresentou um elevado número de dados nulos e, portanto, foi necessário eliminá-la do dataframe. Dados nulos representam uma falta de informação sobre as instâncias usadas para treinar o modelo de aprendizado de máquina. Quando um modelo é treinado com dados incompletos pode haver uma perda de precisão e confiabilidade nos resultados produzidos pelo mesmo, se houvesse por exemplo uma correlação entre os dados nulos e os resultados que estamos tentando prever isso poderia causar um viés no modelo.
 
 <h5 align="center">Dados nulos em *aplication_records.csv*</h5>
 <p align="center">
@@ -111,7 +111,7 @@ Em *credit_records.csv* verifiquei que não haviam dados nulos.
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_3.PNG" width=500>
 </p>
 
-Transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" tornaram-se 1 e 0) e fiz uma verificação nas colunas de características dos aplicantes e verifiquei que haviam alguns *outliers*.
+Transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" tornaram-se 1 e 0) e fiz uma verificação nas colunas de características dos aplicadores e verifiquei que haviam alguns *outliers*.
 
 <h5 align="center">Distribuição dos dados em *application_records.csv*</h5>
 <p align="center">
@@ -125,9 +125,9 @@ Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers pode
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=950>
 </p>
 
-#### Definiação da regra de negócio
+#### Definição da regra de negócio
  
-Os casos que tiveram histórico de inadimplência de mais de 60 dias ao menos uma vez serão considerados como perda/prejuízo e portanto são futuros casos como estes que tentaremos prever.
+Os casos que tiveram histórico de inadimplência de mais de 60 dias ao menos uma vez serão considerados como perda/prejuízo e, portanto, são futuros casos como estes que tentaremos prever.
  
 Em *credit_records.csv*, mantive apenas um registro para cada ID, constando o máximo de dias que o aplicante esteve em atraso em seu histórico, e na coluna `STATUS` defini como esta regra 0 e 1, sendo 0 para nenhum atraso de mais de 60 dias e 1 para pelo menos um atraso de mais de 60 dias em seu histórico.
  
@@ -140,7 +140,7 @@ Depois que o modelo ficou pronto testei outros prazos como regra de corte, mas d
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/balance.PNG" width=400>
 </p>
  
-Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, isso precisará ser abordado novamente no desenvolvimento do modelo.
+Verifiquei que há um expressivo desbalanceamento nos status dos aplicadores, isso precisará ser abordado novamente no desenvolvimento do modelo.
  
 ## Desenvolvimento do modelo
   
@@ -150,7 +150,7 @@ Dividi os dados entre em eixos *x* e *y*, sendo *x* para classes categóricas e 
   
 Dimensionei os dados das colunas de classificação em um intervalo entre 0 e 1. Este escalonamento ajuda a normalizar os dados, evitando que um conjunto de dados com variâncias muito diferentes tenha impacto no desempenho do modelo. Por exemplo, se você tiver um conjunto de dados em que as variáveis possuam diferentes unidades de medida (por exemplo, altura em centímetros e peso em quilos), os dados não estarão em uma escala comparável e isso pode afetar negativamente o desempenho do modelo. 
 
-Devido ao expressivo desbalanceamento no status dos aplicantes, apliquei uma técnica para aumentar artificialmente a quantidade de amostras da classe minoritária para equilibrar a distribuição das classes no conjunto de dados. Utilizei a técnica SMOTE (Synthetic Minority Over-sampling Technique), que cria novas amostras sintéticas interpolando entre as amostras existentes.
+Devido ao expressivo desbalanceamento no status dos aplicadores, apliquei uma técnica para aumentar artificialmente a quantidade de amostras da classe minoritária para equilibrar a distribuição das classes no conjunto de dados. Utilizei a técnica SMOTE (Synthetic Minority Over-sampling Technique), que cria novas amostras sintéticas interpolando entre as amostras existentes.
   
 #### Definindo modelos e testando acurácias
 
@@ -161,7 +161,9 @@ Elenquei alguns modelos que se aplicam na solução de problemas de classificaç
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=900>
 </p>
   
-O modelo que obteve melhor acurácia foi o XGBoost, obtendo um score de aproximdamente 95%.
+O modelo que obteve melhor acurácia foi o XGBoost, obtendo um score de aproximadamente 95%.
+  
+O XGBoost (Extreme Gradient Boosting) é um algoritmo supervisionado baseado em árvore que usa técnicas de regularizaçã e gradient boosting para aumentar a precisão do modelo.
   
 <h5 align="center">Resultados de precisão do modelo escolhido</h5>
 <p align="center">
