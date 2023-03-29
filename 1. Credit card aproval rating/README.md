@@ -107,14 +107,14 @@ Transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" 
 
 <h5 align="center">Distribuição dos dados em *application_records.csv*</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_1.PNG" width=800>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_1.PNG" width=950>
 </p>
 
 Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers podem ser vistos como valores extremos e podem ter um impacto significativo na precisão geral do modelo. Eles podem fazer com que o modelo superajuste os dados de treinamento e resulte em generalização ruim para novos dados, eles podem distorcer os resultados do modelo puxando os valores previstos para eles. Isso pode resultar em um modelo tendencioso que não reflete com precisão os dados subjacentes.
 
 <h5 align="center">Distribuição dos dados em *application_records.csv* após eliminação de outliers</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=800>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=950>
 </p>
 
 #### Definiação da regra de negócio
