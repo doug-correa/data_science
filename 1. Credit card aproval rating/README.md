@@ -24,8 +24,8 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 1. [Dataset](#Dataset)
 2. [Tecnologias utilizadas](#tecnologias-utilizadas)
 3. [Execução do projeto](#análise-exploratória-e-transformação-dos-dados)
-   * [1. Análise exploratória e transformação dos dados](#análise-exploratória-e-transformação-dos-dados)
-   * [2. Desenvolvimento do modelo](#desenvolvimento-do-modelo)
+4. [Análise exploratória e transformação dos dados](#análise-exploratória-e-transformação-dos-dados)
+5. [Desenvolvimento do modelo](#desenvolvimento-do-modelo)
 
 ## Dataset
 
