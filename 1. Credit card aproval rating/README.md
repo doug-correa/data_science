@@ -25,8 +25,8 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 
 ### Files:
 
-Você pode acessar os dados utilizados neste modelo clicando [aqui](www.google.com)
-Os dados são públicos e foram disponibilizados gratuitamente na plataforma [Kagle](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction) para fins educacionais.
+Você pode acessar os dados utilizados neste modelo clicando [aqui](www.google.com)<br>
+Os dados são públicos e foram disponibilizados gratuitamente na plataforma [Kaggle](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction) para fins educacionais.
 
 <li> application_records.csv → Informações e características dos aplicantes <br>
 <li> credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes <br>
