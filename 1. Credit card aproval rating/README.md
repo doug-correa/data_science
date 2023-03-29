@@ -83,7 +83,18 @@ Total de entradas: 1048574
  
 ## Transforação dos dados
  
+Verifiquei que o número total de IDs únicos em *aplication_records.csv* (438510) divergia do número total de linhas (438556), nesse caso foi necessário eliminar dados duplicados. Optei por manter somente o último dado lançado.
+ 
+Em *aplication_records.csv* a coluna `OCCUPATION_TYPE` apresentou um elevado número de dados nulos e portanto a mesma foi eliminada do dataframe para que não interferisse nos resultados do modelo.
+ 
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_1.PNG" width=600>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_2.PNG" width=600>
 </p>
 
+Em *credit_records.csv* verifiquei que não haviam dados nulos.
+ 
+<p align="center">
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_3.PNG" width=600>
+</p>
+
+ 
