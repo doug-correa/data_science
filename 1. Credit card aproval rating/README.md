@@ -141,3 +141,9 @@ Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, iss
  
 ## Desenvolvimento do modelo
  
+#### Definindo modelos e testando acurácias
+
+<h5 align="center">Resultados de acurácia dos modelos testados</h5>
+<p align="center">
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=950>
+</p>
