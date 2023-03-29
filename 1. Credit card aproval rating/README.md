@@ -1,4 +1,4 @@
-# Avaliação de aprovação de cartão de crédito com Machine Learning
+# 💳 Avaliação de aprovação de cartão de crédito com Machine Learning
 
 ## Problema de negócio
 
