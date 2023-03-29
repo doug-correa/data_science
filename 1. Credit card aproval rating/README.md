@@ -127,7 +127,7 @@ Juntei *application_records.csv* e *credit_records.csv* em um dataframe final.
  
 Depois que o modelo ficou pronto testei outros prazos como regra de corte, mas decidi manter em 60 dias pois esse modelo apresentou uma porcentagem de assertividade levemente maior.
  
-<h5 align="center">Balanceamento dos dados em `STATUS` no dataframe final</h5>
+<h5 align="center">Balanceamento dos dados em 'STATUS' no dataframe final</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/balance.PNG" width=400>
 </p>
