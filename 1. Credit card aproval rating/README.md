@@ -1,7 +1,7 @@
 # Avaliação de aprovação de cartão de crédito com Machine Learning
 
 <p align="center">
-  <img src="https://static.vecteezy.com/system/resources/previews/008/490/560/non_2x/credit-card-transparent-background-png.png" width=600>
+  <img src="https://www.pngmart.com/files/3/Credit-Card-PNG-Clipart.png" width=600>
 </p>
 
 ## Problema de negócio
