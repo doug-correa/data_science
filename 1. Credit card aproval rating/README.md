@@ -93,28 +93,28 @@ Em *aplication_records.csv* a coluna `OCCUPATION_TYPE` apresentou um elevado nú
 
 <h5 align="center">Dados nulos em *aplication_records.csv*</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_2.PNG" width=600>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_2.PNG" width=400>
 </p>
 
 Em *credit_records.csv* verifiquei que não haviam dados nulos.
 
 <h5 align="center">Dados nulos em *credit_records.csv*</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_3.PNG" width=600>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_3.PNG" width=400>
 </p>
 
 Transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" tornaram-se 1 e 0) e fiz uma verificação nas colunas de características dos aplicantes e verifiquei que haviam alguns *outliers*.
 
 <h5 align="center">Distribuição dos dados em *application_records.csv*</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_1.PNG" width=600>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_1.PNG" width=700>
 </p>
 
 Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers podem ser vistos como valores extremos e podem ter um impacto significativo na precisão geral do modelo. Eles podem fazer com que o modelo superajuste os dados de treinamento e resulte em generalização ruim para novos dados, eles podem distorcer os resultados do modelo puxando os valores previstos para eles. Isso pode resultar em um modelo tendencioso que não reflete com precisão os dados subjacentes.
 
 <h5 align="center">Distribuição dos dados em *application_records.csv* após eliminação de outliers</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=600>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=700>
 </p>
 
 #### Definiação da regra de negócio
@@ -129,7 +129,7 @@ Depois que o modelo ficou pronto testei outros prazos como regra de corte, mas d
  
 <h5 align="center">Balanceamento dos dados em `STATUS` no dataframe final</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/balance.PNG" width=600>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/balance.PNG" width=300>
 </p>
  
 Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, isso precisará ser abordado novamente no desenvolvimento do modelo.
