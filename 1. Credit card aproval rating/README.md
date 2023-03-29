@@ -81,7 +81,9 @@ Total de entradas: 1048574
 <li> Imblearn
 <li> XGBoost
  
-## Transforação dos dados
+## Análise exploratória e transformação dos dados
+ 
+#### Saneamento dos dados
  
 Verifiquei que o número total de IDs únicos em *aplication_records.csv* (438510) divergia do número total de linhas (438556), nesse caso foi necessário eliminar dados duplicados. Optei por manter somente o último dado lançado.
  
@@ -99,7 +101,7 @@ Em *credit_records.csv* verifiquei que não haviam dados nulos.
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/null_3.PNG" width=600>
 </p>
 
-Em seguida transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" tornaram-se 1 e 0) e fiz uma verificação nas colunas de características dos aplicantes e verifiquei que haviam alguns *outliers*.
+Transformei todos os dados não numéricos em numéricos (por exemplo "Y" e "N" tornaram-se 1 e 0) e fiz uma verificação nas colunas de características dos aplicantes e verifiquei que haviam alguns *outliers*.
 
 <h5 align="center">Distribuição dos dados em *application_records.csv*</h5>
 <p align="center">
@@ -108,9 +110,27 @@ Em seguida transformei todos os dados não numéricos em numéricos (por exemplo
 
 Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers podem ser vistos como valores extremos e podem ter um impacto significativo na precisão geral do modelo. Eles podem fazer com que o modelo superajuste os dados de treinamento e resulte em generalização ruim para novos dados, eles podem distorcer os resultados do modelo puxando os valores previstos para eles. Isso pode resultar em um modelo tendencioso que não reflete com precisão os dados subjacentes.
 
-<h5 align="center">Distribuição dos dados em *application_records.csv após eliminação de outliers*</h5>
+<h5 align="center">Distribuição dos dados em *application_records.csv* após eliminação de outliers</h5>
 <p align="center">
   <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/outliers_2.PNG" width=600>
 </p>
 
+#### Definiação da regra de negócio
+ 
+Os casos que tiveram histórico de inadimplência de mais de 60 dias ao menos uma vez serão considerados como perda/prejuízo e portanto são futuros casos como estes que tentaremos prever.
+ 
+Em *credit_records.csv*, mantive apenas um registro para cada ID, constando o máximo de dias que o aplicante esteve em atraso em seu histórico, e na coluna `STATUS` defini como esta regra 0 e 1, sendo 0 para nenhum atraso de mais de 60 dias e 1 para pelo menos um atraso de mais de 60 dias em seu histórico.
+ 
+Juntei *application_records.csv* e *credit_records.csv* em um dataframe final.
+ 
+Depois que o modelo ficou pronto testei outros prazos como regra de corte, mas decidi manter em 60 dias pois esse modelo apresentou uma porcentagem de assertividade levemente maior.
+ 
+<h5 align="center">Balanceamento dos dados em `STATUS` no dataframe final</h5>
+<p align="center">
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/balance.PNG" width=600>
+</p>
+ 
+Verifiquei que há um expressivo desbalanceamento nos status dos aplicantes, isso precisará ser abordado novamente no desenvolvimento do modelo.
+ 
+## Desenvolvimento do modelo
  
