@@ -6,6 +6,8 @@
 
 Modelo de aprendizado de máquina capaz de prever se um pedido de cartão de crédito deve ser aprovado ou não com base em várias características do solicitante.
 
+O notebook do projeto pode ser acessado clicando [aqui](https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/credit_card_approval_rating.ipynb)
+
 ## Problema de negócio
 
 A avaliação de aprovação de crédito é uma etapa importante para as instituições financeiras antes de concederem empréstimos ou financiamentos a um indivíduo ou empresa, ela serve para avaliar o risco envolvido e garantir que o dinheiro emprestado será recuperado com juros, o que é importante para o retorno financeiro da instituição.
