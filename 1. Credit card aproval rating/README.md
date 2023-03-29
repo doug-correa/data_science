@@ -26,8 +26,8 @@ Celular: [+55 (51) 98492 5343](https://wa.me/5551984925343)
 
 ### Files:
 
-<li> application_records.csv → Informações e características dos aplicantes </li>
-<li> credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes </li>
+<li> application_records.csv → Informações e características dos aplicantes <br>
+<li> credit_records.csv → Histórico mensal de situação de inadimplência dos aplicantes <br>
 
 #### aplication_records.csv
 
