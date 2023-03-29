@@ -40,7 +40,7 @@ Você pode acessar os arquivos que contém os dados utilizados neste projeto cli
 
 #### aplication_records.csv
 
-`ID` → ID do aplicante <br>
+`ID` → ID do aplicador <br>
 `CODE_GENDER` → Gênero <br>
 `FLAG_OWN_CAR` → Possui veículo próprio <br>
 `FLAG_OWN_REALTY` → Possui imóvel próprio <br>
@@ -66,7 +66,7 @@ Total de entradas: 438556
 Cada ID possui uma entrada para cada mês desde sua aplicação, contendo na coluna 'STATUS' uma flag que corresponde a um determinado <br>
 intervalo de dias que se passaram desde a contratação do crédito sem que houvesse pagamento
 
-`ID` → ID do aplicante <br>
+`ID` → ID do aplicador <br>
 `MONTHS_BALANCE` → Contagem regressiva de meses desde a aplicação (-1 corresponde ao mês passado) <br>
 `STATUS` → <br>
     <li> 0: 1-29 dias <br>
@@ -129,7 +129,7 @@ Eliminei estes outliers e agora os dados ficaram mais homogêneos. Outliers pode
  
 Os casos que tiveram histórico de inadimplência de mais de 60 dias ao menos uma vez serão considerados como perda/prejuízo e, portanto, são futuros casos como estes que tentaremos prever.
  
-Em *credit_records.csv*, mantive apenas um registro para cada ID, constando o máximo de dias que o aplicante esteve em atraso em seu histórico, e na coluna `STATUS` defini como esta regra 0 e 1, sendo 0 para nenhum atraso de mais de 60 dias e 1 para pelo menos um atraso de mais de 60 dias em seu histórico.
+Em *credit_records.csv*, mantive apenas um registro para cada ID, constando o máximo de dias que o aplicador esteve em atraso em seu histórico, e na coluna `STATUS` defini como esta regra 0 e 1, sendo 0 para nenhum atraso de mais de 60 dias e 1 para pelo menos um atraso de mais de 60 dias em seu histórico.
  
 Juntei *application_records.csv* e *credit_records.csv* em um dataframe final.
  
