@@ -151,10 +151,10 @@ Devido ao expressivo desbalanceamento no status dos aplicantes, apliquei uma té
 
 <h5 align="center">Resultados de acurácia dos modelos testados</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=700>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results.PNG" width=900>
 </p>
   
 <h5 align="center">Resultados de acurácia dos modelos testados</h5>
 <p align="center">
-  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results_2.PNG" width=400>
+  <img src="https://github.com/dougpcorrea/data_science/blob/main/1.%20Credit%20card%20aproval%20rating/images/results_2.PNG" width=450>
 </p>
