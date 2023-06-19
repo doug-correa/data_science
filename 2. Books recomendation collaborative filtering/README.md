@@ -10,17 +10,13 @@ The dataset used is a publicly available dataset found on Kaggle since, being a 
 
 This dataset can be accessed [here]().
 
-### Exploratory Data Analysis and Data Transformation
+### How the algorithm was built
 
-1. There were 2 rows with missing data in the dataset, and they were removed.
-2. To make the calculation manageable for computer memory, I filtered only books that have more than 50 ratings.
+The data was inputted into a matrix and calculated using Pearson's correlation. The recommended books are the top x books with the highest average rating among y users who have the highest degree of similarity with the target user, excluding books already read by the target user.
 
-### Algorithm
+### How it was implemented on the system
 
-1. I inputted the data into a matrix.
-2. I calculated the matrix using Pearson correlation.
-3. I ranked the top 10 users most similar to the target user.
-4. I ranked the top 10 books with the highest ratings among the books read by similar users to the target user that have not been read by the target user yet.
+Each time the user rates a new book, an asynchronous task is called on the back-end, and the user matrix is then calculated. Once the calculation is complete, the recommended books for the user are updated in the database. As soon as the user accesses the recommendations page again, they will see the possible new recommendations discovered by the algorithm.
 
 
 
