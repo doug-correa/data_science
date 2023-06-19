@@ -2,7 +2,7 @@
 
 Recently, I have been working on an open-source application aimed at empowering individuals to unlock their full potential, stay organized, and achieve their goals effectively by leveraging the power of smart algorithms and AI. One of the features of this application is a virtual library system where users can catalog and rate books they have recently read and those they are interested in reading in the future. They can also search for new books in a comprehensive database and receive personalized recommendations based on their interests and ratings. One of the recommendation algorithms used in this project is a collaborative filtering system, which will be presented here:
 
-You can access the code I used in this project in this [notebook]().
+You can access the code I used in this project in this [notebook](https://github.com/dougpcorrea/data_science/blob/main/2.%20Books%20recomendation%20collaborative%20filtering/book_recomendation.ipynb).
 
 ### Dataset
 
